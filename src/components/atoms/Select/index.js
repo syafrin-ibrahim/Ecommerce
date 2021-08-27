@@ -1,28 +1,29 @@
 import React, { useState}  from 'react'
 import { StyleSheet, Text, View } from "react-native"
-import { fonts, colors } from '../../../utils'
+import { fonts, colors, responsiveHeight } from '../../../utils'
 import {Picker} from '@react-native-picker/picker';
 
 const Select  = ({ datas, width, height, label, fontSize })=>{
     const [value, setValue] = useState('')
     return(
         <View style={styles.container}>
-        <Text style={styles.title(fontSize)}>{label} :</Text>
-        <View style={styles.wrapperSelect}>
-            <Picker
-                selectedValue={value}
-                style={styles.picker(width, height, fontSize)}
-                onValueChange={(itemValue, itemIndex) =>
-                    setValue(itemValue)
-                }>
-                {
-                    datas.map((e, index)=>{
-                        return <Picker.Item   style={{ fontSize : 13 }} label={e} value={e} key={index} />
-                    })
-                }
-                
-            </Picker>
-        </View>
+            <Text style={styles.title(fontSize)}>{label} :</Text>
+            <View style={styles.wrapperPicker}>
+                <Picker
+                    selectedValue={value}
+                    style={styles.picker(width, height, fontSize)}
+                    onValueChange={(itemValue, itemIndex) =>
+                        setValue(itemValue)
+                    }>
+                        <Picker.Item label="-- pilih --" value="" />
+                    {
+                        datas.map((e, index)=>{
+                            return <Picker.Item   style={{ fontSize : 13 }} label={e} value={e} key={index} />
+                        })
+                    }
+                    
+                </Picker>
+            </View>
         </View>
     )
 }
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
         fontFamily : fonts.primary.regular,
     
     }),
-    wrapperSelect : {
+    wrapperPicker : {
         borderWidth : 1,
         borderRadius : 5,
         borderColor: colors.border, 
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
         fontSize : fontSize ? fontSize : 13,
         fontFamily : fonts.primary.regular,
         width : width,
-        height : height, 
+        height : height ? height : responsiveHeight(46), 
     }),
   
    
