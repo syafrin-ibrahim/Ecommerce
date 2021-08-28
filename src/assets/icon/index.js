@@ -14,9 +14,10 @@ import IconLock from './lock.svg'
 import IconArrowLeft from './arrow-left.svg'
 import IconShopingCartWhite from './shopping-cart-white.svg'
 import IconDelete from './icon-delete.svg'
+import IconSubmit from './submit.svg'
 
 export {
     Home, HomeActive, Cart, Shirt, ShirtActive, User, UserActive, Search,
     IconUser, IconHistory, IconSignOut, IconArrowRight,
-    IconLock, IconArrowLeft, IconShopingCartWhite, IconDelete
+    IconLock, IconArrowLeft, IconShopingCartWhite, IconDelete, IconSubmit
 }

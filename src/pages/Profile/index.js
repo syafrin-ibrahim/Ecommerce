@@ -7,9 +7,10 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { heightUi } from '../../utils/constant';
 import { ListMenu } from '../../components/molecules';
 
-const Profile = ()=>{
+const Profile = ({navigation})=>{
   const profile = dummyProfile
   const menus = dummyMenu
+  console.log('menusaya', menus)
     return (
         <View style={styles.page}>
           <View style={styles.container}>
@@ -21,7 +22,7 @@ const Profile = ()=>{
             </View>
             <View style={styles.menu}>
 
-                <ListMenu  menus={menus} />
+                <ListMenu  menus={menus}  navigation={navigation}/>
             </View>
           </View>
         </View>

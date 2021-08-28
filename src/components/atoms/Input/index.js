@@ -2,19 +2,19 @@ import React  from 'react'
 import { StyleSheet, Text, TextInput, View } from "react-native"
 import { colors, fonts } from '../../../utils'
 
-const Input  = ({ textarea, label, width, height, fontSize, placeholder })=>{
+const Input  = ({ textarea, label, width, height, fontSize, value })=>{
     if(textarea){
         return(
             <View style={styles.container}>
             <Text style={styles.title(fontSize)}>{label} : </Text>    
-            <TextInput style={styles.inputTextarea(fontSize)} multiline={true} numberOfLines={3}/>
+            <TextInput style={styles.inputTextarea(fontSize)} multiline={true} numberOfLines={3} value={value}/>
         </View>
         )
     }
     return(
         <View style={styles.container}>
             <Text style={styles.title(fontSize)}>{label} :</Text>
-            <TextInput style={styles.grx(fontSize, width,height)}/>
+            <TextInput style={styles.grx(fontSize, width,height)} value={value}/>
         </View>
     )
 }

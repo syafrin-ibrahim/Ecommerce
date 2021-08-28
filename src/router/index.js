@@ -3,7 +3,7 @@
 import * as React from 'react';
 // import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, Splash, Profile, Product, JerseyDetail, Cart, Checkout } from '../pages';
+import { Home, Splash, Profile, Product, JerseyDetail, Cart, Checkout, EditProfile } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MainTab } from '../components';
 
@@ -33,6 +33,7 @@ const Router = ()=> {
         <Stack.Screen name="JerseyDetail" component={JerseyDetail} options={{ headerShown: false }}/>
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="Checkout" component={Checkout} />
+        <Stack.Screen name="EditProfile" component={EditProfile} options={{ title : 'Edit Profile'}} />
       </Stack.Navigator>
     
   );

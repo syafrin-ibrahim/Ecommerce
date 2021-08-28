@@ -5,4 +5,5 @@ import Product from "./Product"
 import JerseyDetail from "./JerseyDetail"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
-export { Home,Splash, Product, Profile, JerseyDetail, Cart, Checkout}
+import EditProfile from "./EditProfile"
+export { Home,Splash, Product, Profile, JerseyDetail, Cart, Checkout, EditProfile}

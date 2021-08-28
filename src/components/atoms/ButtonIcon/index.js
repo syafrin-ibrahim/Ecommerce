@@ -1,6 +1,6 @@
 import React from 'react'
 import {View , StyleSheet, Text, TouchableOpacity} from 'react-native'
-import { Cart, IconArrowLeft, IconShopingCartWhite } from '../../../assets'
+import { Cart, IconArrowLeft, IconArrowRight, IconShopingCartWhite, IconSubmit } from '../../../assets'
 import { colors } from '../../../utils';
 import Gap from '../Gap';
 
@@ -12,6 +12,9 @@ const ButtonIcon  = ({icon, count, padding, onPress, type, title,color})=>{
         if(icon === 'arrow-left'){
             return <IconArrowLeft />
         }
+        if(icon === 'submit'){
+            return <IconSubmit />
+        }
         if (icon === 'white-cart'){
             return <IconShopingCartWhite />
         }
@@ -22,7 +25,7 @@ const ButtonIcon  = ({icon, count, padding, onPress, type, title,color})=>{
         return (
             <TouchableOpacity onPress={onPress}>
                      <View style={styles.container(padding,color)}>
-                     <Icon/>   
+                     <Icon icon/>   
                      <Gap width={10} />
                      <Text style={styles.textIcon}>{title}</Text>                
                 </View>
