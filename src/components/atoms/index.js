@@ -8,4 +8,6 @@ import Select from "./Select";
 import Input from "./Input";
 import CartItem from "./CartItem";
 import CardAddress from "./CardAddress";
-export { Button, ButtonIcon, Gap, CardLiga, CardJersey, CardMenu, Select, Input, CartItem, CardAddress }
+import CardHistory from "./CardHistory";
+export { Button, ButtonIcon, Gap, CardLiga, CardJersey, CardMenu,
+     Select, Input, CartItem, CardAddress, CardHistory }

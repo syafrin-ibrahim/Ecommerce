@@ -5,4 +5,5 @@ import ListLiga from "./ListLiga";
 import ListJersey from "./ListJersey";
 import ListMenu from "./ListMenu";
 import JerseySlider from './JerseySlider'
-export { MainTab, Header, Banner, ListLiga, ListJersey, ListMenu, JerseySlider }
+import ListHistory from './ListHistory'
+export { MainTab, Header, Banner, ListLiga, ListJersey, ListMenu, JerseySlider, ListHistory }

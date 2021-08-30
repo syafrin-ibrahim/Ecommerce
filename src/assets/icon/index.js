@@ -15,9 +15,12 @@ import IconArrowLeft from './arrow-left.svg'
 import IconShopingCartWhite from './shopping-cart-white.svg'
 import IconDelete from './icon-delete.svg'
 import IconSubmit from './submit.svg'
+import IconRegister1 from './register1.js'
+import IconRegister2 from './register2.js'
 
 export {
     Home, HomeActive, Cart, Shirt, ShirtActive, User, UserActive, Search,
     IconUser, IconHistory, IconSignOut, IconArrowRight,
-    IconLock, IconArrowLeft, IconShopingCartWhite, IconDelete, IconSubmit
+    IconLock, IconArrowLeft, IconShopingCartWhite, IconDelete, IconSubmit,
+    IconRegister1, IconRegister2 
 }

@@ -4,7 +4,7 @@ import {CardAddress, Select, Gap, ButtonIcon} from '../../components'
 import { dummyOrder, dummyProfile } from '../../data'
 import { colors, fonts, numberWithCommas, responsiveHeight } from '../../utils'
 
-const Checkout = ()=>{
+const Checkout = ({ navigation })=>{
     const profile = dummyProfile
     const data = dummyOrder[0]
     const ekspedisi = []

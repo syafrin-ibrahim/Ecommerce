@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Logo, LogoUtama } from '../../assets'
+import { colors } from '../../utils'
 const Splash = ({navigation})=>{
     useEffect(() => {
         
@@ -22,6 +23,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems :  'center',
         justifyContent : 'center',
-        backgroundColor : 'yellow'
+        backgroundColor : colors.white
     }
 })

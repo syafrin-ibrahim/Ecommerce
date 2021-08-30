@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         
     },
     title : (fontSize)=>({
-        fontSize : fontSize ? fontSize : 18,
+        fontSize : fontSize ? fontSize : 14,
         fontFamily : fonts.primary.regular,
     
     }),
